@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #222;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Склеиваем верх и низ */
+.appwindow, .city_search_container {
+    width: 470px;
+    background: linear-gradient(135deg, #6364ae, #1d313c);
+    color: #fff;
+}
+
+.appwindow {
+    padding: 40px 35px 0;
+    border-radius: 20px 20px 0 0; /* Округление только сверху */
+    text-align: center;
+}
+
+.city_search_container {
+    padding: 20px 35px 40px;
+    border-radius: 0 0 20px 20px; /* Округление только снизу */
+    text-align: center;
+}
+
+.search_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.city_search_input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.btn_forsearch {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn_forsearch i {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Погода */
+.weather_icon {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.weather--temp {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather--city {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Детали */
+.details_weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.Weather_col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.Weather_col i {
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.wind_inf, .Hum_inf {
+    font-size: 22px;
+    font-weight: 600;
+}
